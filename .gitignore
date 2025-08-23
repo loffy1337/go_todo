@@ -1,0 +1,13 @@
+/bin/
+/build/
+*.exe
+*.out
+*.test
+
+.idea/
+.vscode/
+
+.env
+
+.DS_Store
+Thumbs.db
