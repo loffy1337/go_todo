@@ -2,7 +2,6 @@ package main
 
 import (
 	"database/sql"
-	"fmt"
 	"net/http"
 	"time"
 
@@ -20,8 +19,6 @@ func main() {
 	if err != nil {
 		logger.Error.Fatalf("config load: %v", err)
 	}
-
-	fmt.Println(config.MySQL.Port)
 
 	// Подключение к базе данных
 	db, err := sql.Open("mysql", config.GetMySQLDSN())
