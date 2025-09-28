@@ -12,7 +12,7 @@ go run ./cmd/server
 5. Проверьте: `GET http://localhost:8080/health -> 200 OK`
 
 ## Пример .env файла:
-`
+```.env
 APP_NAME=ToDoApp
 APP_ENV=dev
 APP_PORT=8080
@@ -27,7 +27,7 @@ MYSQL_PARAMS=charset=utf8mb4&parseTime=true&loc=Local
 JWT_SECRET=secret_jwt
 JWT_TTL_MINUTES=120
 COOKIE_DOMAIN=localhost
-`
+```
 
 ## Структура проекта
 * internal/models - модели
